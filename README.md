@@ -12,8 +12,8 @@ each documented with a step-by-step guide and screenshots.
 | # | Task | Folder | Status |
 |---|---|---|---|
 | 1 | Cloud Fundamentals Report — IaaS, PaaS, SaaS explained with examples + AWS vs Azure comparison (2–3 pages) | [`task1-cloud-fundamentals/`](task1-cloud-fundamentals/) | ✅ Complete |
-| 2 | Virtual Machine Setup — EC2 `t2.micro` (Amazon Linux 2023) + nginx, documented with screenshots | [`task2-vm-setup/`](task2-vm-setup/) | 📝 Guide ready — report after screenshots |
-| 3 | Cloud Storage & File Management — S3 bucket with folders, uploads and presigned-URL access demo, screenshots | [`task3-cloud-storage/`](task3-cloud-storage/) | 📝 Guide ready — report after screenshots |
+| 2 | Virtual Machine Setup — EC2 `t3.micro` (Amazon Linux 2023) + nginx, documented with screenshots | [`task2-vm-setup/`](task2-vm-setup/) | ✅ Complete |
+| 3 | Cloud Storage & File Management — S3 bucket with folders, uploads and presigned-URL access demo, screenshots | [`task3-cloud-storage/`](task3-cloud-storage/) | ✅ Complete |
 
 ## Technologies used
 
