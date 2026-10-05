@@ -18,8 +18,8 @@ The key takeaway: each model trades control for convenience."
 **[1:00–2:30] Task 2 — Virtual machine on AWS EC2** (EC2 console → terminal → browser)
 "Second, I launched a free-tier EC2 virtual machine running Amazon Linux, installed
 the nginx web server on it over SSH, and served a live page at its public IP —
-[YOUR-PUBLIC-IP]. I also set a zero-dollar billing alarm first, so nothing can
-accidentally cost money."
+[YOUR-PUBLIC-IP]. The new AWS Free Plan can't charge anything unless you upgrade
+to Paid, so the whole build ran on the signup credits."
 
 **[2:30–3:30] Task 3 — Cloud storage on Amazon S3** (S3 console)
 "Third, I set up an S3 bucket with organized folders, uploaded files, and kept
@@ -41,8 +41,7 @@ Over the last few weeks I went from theory to hands-on:
 plus an AWS vs Microsoft Azure comparison.
 
 🖥️ Task 2 — Launched a free-tier AWS EC2 virtual machine, installed the nginx web
-server over SSH, and served a live page from the cloud — with a $0 billing alarm
-set up first for cost safety.
+server over SSH, and served a live page from the cloud — all on free-plan credits.
 
 🪣 Task 3 — Built a private Amazon S3 bucket with organized folders and files,
 configured access permissions, and shared a file via a time-limited presigned URL

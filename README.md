@@ -17,7 +17,7 @@ each documented with a step-by-step guide and screenshots.
 
 ## Technologies used
 
-- **Cloud platform:** Amazon Web Services (AWS Free Tier) — EC2, S3, CloudWatch billing alarms
+- **Cloud platform:** Amazon Web Services (AWS Free Tier) — EC2, S3 (a CloudWatch billing alarm is recommended in the Task 2 guide as an optional safety net)
 - **OS / server:** Amazon Linux 2023, nginx
 - **Docs:** Markdown + PDF (built with WeasyPrint)
 

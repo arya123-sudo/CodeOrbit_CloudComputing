@@ -34,7 +34,7 @@ Launch a virtual machine on the AWS Free Plan, configure its firewall, connect t
    systemctl is-active nginx   # → active
    ```
 5. **Verified in the browser:** opened `http://13.49.230.117` — the "Welcome to nginx!" page loaded, proving the security-group HTTP rule and the server both work.
-6. **Stopped the instance** after the screenshots to avoid burning Free Plan credits (a running VM costs a few cents/hour, mostly the public IPv4 address).
+6. **Planned cleanup:** stop (or terminate) the instance after the screenshots so it doesn't keep using Free Plan credits — a running VM consumes credits for the instance hours and the public IPv4 address.
 
 ## 4. Screenshots
 
@@ -46,12 +46,12 @@ Launch a virtual machine on the AWS Free Plan, configure its firewall, connect t
 
 ## 5. Issues faced and how they were fixed
 
-- **EC2 Instance Connect failed at first.** Two causes: the status checks were still initializing, and I had picked the *IPv6* EC2 Instance Connect prefix list while the instance has no IPv6 address. Fixed by selecting `com.amazonaws.eu-north-1.ec2-instance-connect` (IPv4) in the security group and waiting for 3/3 checks.
+- **EC2 Instance Connect failed at first.** Likely causes: the status checks were still initializing, and I had picked the *IPv6* EC2 Instance Connect prefix list while the instance has no IPv6 address. The browser-based connection was never retried after that — the connection that actually worked was direct SSH from Windows PowerShell with the `.pem` key (see next point).
 - **Windows SSH refused the .pem key** ("bad permissions / UNPROTECTED PRIVATE KEY FILE"). Fixed with `icacls codeorbit-key.pem /reset`, then `/grant:r` for the current user and `/inheritance:r` — after which `ssh -i codeorbit-key.pem ec2-user@13.49.230.117` connected on the first try.
 
 ## 6. Cost note
 
-This build ran on the AWS Free Plan ($100 in credits at signup, up to $200 total, 6 months — no charges possible without upgrading to Paid). The few hours of `t3.micro` used here cost a few cents of credits; the instance was stopped immediately after the task.
+This build ran on the AWS Free Plan ($100 in credits at signup, up to $200 total, 6 months — no charges possible without upgrading to Paid). Usage was only a few hours of `t3.micro`, intended to stay well within the credit allowance; exact billing was not separately checked. The instance was slated to be stopped (or terminated) right after the screenshots to avoid further credit use.
 
 ## 7. Conclusion
 

@@ -40,7 +40,7 @@ Set up a cloud storage bucket on the AWS Free Plan, practice uploading, organizi
 
 ## 5. Cost note
 
-S3's 5 GB of standard storage is always-free, and this task used a few kilobytes. The bucket sits inside the AWS Free Plan ($100 in credits at signup, up to $200 total) — effective cost: zero.
+The few kilobytes used here were intended to stay within the Free Plan's credit allowance — exact billing was not separately checked.
 
 ## 6. Conclusion
 
