@@ -38,10 +38,9 @@ To reproduce the PDF report locally: `pip install weasyprint` then
 
 ## GitHub repository link
 
-> TODO: replace with the real URL after creating the repo —
-> `https://github.com/arya123-sudo/CodeOrbit_CloudComputing`
+This repository: https://github.com/arya123-sudo/CodeOrbit_CloudComputing
 
 ## Demo video
 
-A 2–5 minute screen recording walking through the EC2 + nginx build
-will be posted on LinkedIn (link added here once published).
+The internship demo video — a walkthrough of the tasks, including the EC2 + nginx
+build — was posted on LinkedIn: https://lnkd.in/p/gqUT9bEB
